@@ -19,7 +19,6 @@ def nyc_pigeon_organizer(data)
     new_info.each do |info_called, array|                   #iterate into the values, returning the name of the value and it's actual value
       data.each do |color_gender_lives, values|
         values.each do |value, array|
-          binding.pry
           array.each do |stuff|
             if stuff == name && info_called == color_gender_lives
               final[name][info_called] << value.to_s
