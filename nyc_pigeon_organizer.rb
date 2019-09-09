@@ -7,14 +7,15 @@ def nyc_pigeon_organizer(data)
     id = value[i]
     i = 0 
     
-    while i < value.length do
+    while i < names.length do
       pigeon_organized << id
       
       i += 1
     end
+    binding.pry
   end
     
-    binding.pry
+    
   
   pigeon_organized
 end
