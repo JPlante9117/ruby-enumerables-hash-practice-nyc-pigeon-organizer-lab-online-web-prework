@@ -15,7 +15,9 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-
+  final.each do |a, b|
+    binding.pry
+  end
  final                                                      #RETURN THE FINAL HASH
 end
 
