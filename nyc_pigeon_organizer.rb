@@ -15,8 +15,10 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  final.each do |new_name, b|
-    binding.pry
+  final.each do |new_name, new_values|
+    new_values.each do |specified, value_given|
+      binding.pry
+    end
   end
  final                                                      #RETURN THE FINAL HASH
 end
