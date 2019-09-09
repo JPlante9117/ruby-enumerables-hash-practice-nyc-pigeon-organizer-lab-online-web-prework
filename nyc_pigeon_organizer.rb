@@ -4,6 +4,7 @@ def nyc_pigeon_organizer(data)
   final = {}
   
   data.each do |color_gender_lives, values|                 #iterate over the first set of hashes/values from data . . .
+    binding.pry
     values.each do |value, array|                           #iterate through the second . . .
       array.each do |name|                                  #iterate through the third/final . . .
         if final[name] == NIL                               #if there is no current value for the name . . .
@@ -15,6 +16,5 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-binding.pry
  final
 end
