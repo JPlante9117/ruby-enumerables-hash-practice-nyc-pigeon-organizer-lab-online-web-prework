@@ -6,6 +6,6 @@ def nyc_pigeon_organizer(data)
   data[:gender].map
     
     binding.pry
-  end
+  
   
 end
