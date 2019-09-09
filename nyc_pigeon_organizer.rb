@@ -18,8 +18,12 @@ def nyc_pigeon_organizer(data)
   final.each do |name, new_info|                            #call on the new hash, pieces being the key (name) and value (color/gender                                                               /lives)
     new_info.each do |info_called, array|                   #iterate into the values, returning the name of the value and it's actual value
       data.each do |color_gender_lives, values|
-        values.each do |a, b|
-          binding.pry
+        values.each do |value, array|
+          array.each do |name|
+            if name == new_info && info_called == color_gender_lives
+              final[name][info_called] << value.to_s
+            end
+          end
         end
       end
     end
