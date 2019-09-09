@@ -17,19 +17,16 @@ def nyc_pigeon_organizer(data)
   end
   final.each do |name, new_info|                            #call on the new hash, pieces being the key (name) and value (color/gender                                                               /lives)
     new_info.each do |info_called, array|                   #iterate into the values, returning the name of the value and it's actual value
-      data.each do |color_gender_lives, values|
-        values.each do |value, array|
-          array.each do |stuff|
-            if stuff == name && info_called == color_gender_lives
-              final[name][info_called] << value.to_s
+      data.each do |color_gender_lives, values|             #also iterate through the original data table
+        values.each do |value, array|                       #(DATA) iterate back to the values
+          array.each do |stuff|                             #(DATA) iterate all the way to the array of names
+            if stuff == name && info_called == color_gender_lives       #if the names in the array match the names in final, and the                                                                 info_called (color/gender/lives) matches the data from data[] . . .
+              final[name][info_called] << value.to_s                    #then shovel that value as a string (not symbol!) into that                                                                information
             end
           end
         end
       end
     end
   end
-  
-  
-  
  final                                                      #RETURN THE FINAL HASH
 end
