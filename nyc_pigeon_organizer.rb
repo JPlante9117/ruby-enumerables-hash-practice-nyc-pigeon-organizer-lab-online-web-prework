@@ -20,7 +20,7 @@ def nyc_pigeon_organizer(data)
       data.each do |color_gender_lives, values|
         values.each do |value, array|
           array.each do |elements|
-            if elements == name && info_called == color_gender_lives
+            if elements == val && info_called == color_gender_lives
               final[val][info_called] << value.to_s 
             end
           end
