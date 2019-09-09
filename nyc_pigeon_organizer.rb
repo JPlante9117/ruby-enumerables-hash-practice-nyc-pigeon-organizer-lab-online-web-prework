@@ -16,14 +16,9 @@ def nyc_pigeon_organizer(data)
     end
   end
   final.each do |name, new_info|
-    new_info.each do |info_called, value|
-      value.each do |array|
+    new_info.each do |info_called, array|
+      array.each do |a|
         binding.pry
-        array.each do |a|
-        
-          binding.pry
-        
-        end
       end
     end
   end
