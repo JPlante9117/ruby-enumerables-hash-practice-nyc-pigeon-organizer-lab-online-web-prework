@@ -24,7 +24,7 @@ def nyc_pigeon_organizer(data)
             if stuff == new_info && info_called == color_gender_lives
               final[name][info_called] << value.to_s
             end
-        
+          end
         end
       end
     end
