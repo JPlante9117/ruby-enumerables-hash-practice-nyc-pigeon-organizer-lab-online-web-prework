@@ -15,18 +15,6 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  final.each do |new_name, new_values|
-    new_values.each do |specified, array|
-      data.each do |color_gender_lives, values|
-        values.each do |specifics, names|
-          names.each do |element|
-            if element == new_name && specified == color_gender_lives
-              final[new_name][specified] << val.to_s
-            end
-          end
-        end
-      end
-    end
-  end
+
  final                                                      #RETURN THE FINAL HASH
 end
