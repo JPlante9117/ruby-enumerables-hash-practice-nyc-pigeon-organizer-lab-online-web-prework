@@ -19,11 +19,10 @@ def nyc_pigeon_organizer(data)
     new_info.each do |info_called, array|                   #iterate into the values, returning the name of the value and it's actual value
       data.each do |color_gender_lives, values|
         values.each do |value, array|
-          array.each do |stuff|
             if stuff == new_info && info_called == color_gender_lives
               final[name][info_called] << value.to_s
             end
-          end
+        
         end
       end
     end
