@@ -11,6 +11,7 @@ def nyc_pigeon_organizer(data)
           final[val][color_gender_lives] = []
         else
           final[val][color_gender_lives] = []
+        end
       end
     end
   end
