@@ -16,18 +16,5 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  final.each do |name, values|                              #Now, look into the data for final . . .
-    values.each do |hashvalue, array|                       #and into it's values . . .
-      data.each do |color_gender_lives, values|             #and into the data values . . .
-        values each do |value, array|
-          array.each do |element|                           #to match the array value 
-            if element == name && hashvalue == color_gender_lives     #if the 
-              final[name][hashvalue] << value.to_s 
-            end
-          end
-        end
-      end
-    end
-  end
  final
 end
