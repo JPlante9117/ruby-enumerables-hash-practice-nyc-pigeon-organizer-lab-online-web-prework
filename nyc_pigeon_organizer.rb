@@ -15,8 +15,10 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  final.each do |name, color_gender_lives|
-    binding.pry
+  final.each do |name, new_info|
+    new_info.each do |a, b|
+      binding.pry
+    end
   end
   
   
